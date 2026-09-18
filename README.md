@@ -205,10 +205,6 @@ Tahun: 2026
 
 ## Screenshot
 
-Tambahkan screenshot tampilan website pada bagian ini.
-
-## Screenshot
-
 ### Tampilan Profil
 ![Tampilan Profil](IMG/screenshot-profil.png)
 
