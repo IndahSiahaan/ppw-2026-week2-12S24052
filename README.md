@@ -193,13 +193,7 @@ Beberapa penerapan aksesibilitas pada website meliputi:
 
 Repository proyek:
 
-`https://github.com/[username]/ppw-2026-week2-[NIM]`
-
-## Live Demo
-
-Website dapat diakses melalui GitHub Pages:
-
-`https://[username].github.io/ppw-2026-week2-[NIM]/`
+(https://github.com/IndahSiahaan/ppw-2026-week2-12S24052)
 
 ## Identitas
 
