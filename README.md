@@ -1,56 +1,49 @@
-## Portofolio Pribadi & Layanan Interaktif
+# Refactoring Arsitektural Personal Portfolio & Service Portal (Week 4)
 
-Tugas Praktikum Minggu 03 - Pemrograman dan Pengujian Web (12S3101)
-Program Studi Sarjana Sistem Informasi — Institut Teknologi Del
+Tugas Praktikum Minggu 04 - Pemrograman dan Pengujian Web (12S3101)  
+Program Studi Sarjana Sistem Informasi — Institut Teknologi Del  
 
-## dentitas Mahasiswa
-Nama: Indah Triyuni Siahaan
-NIM: 12S24052
-Kelas: 13SI2
-Program Studi: S1 Sistem Informasi
-Fakultas: Fakultas Informatika dan Teknik Elektro (FITE)
-Institusi: Institut Teknologi Del
+## Identitas Mahasiswa
+- **Nama:** Indah Triyuni Siahaan
+- **NIM:** 12S24052
+- **Kelas:** 13SI2
+- **Live Deployment:** 
+[https://indah324.github.io/ppw-2026-week4-12S24052/]
+(https://indah324.github.io/ppw-2026-week4-12S24052/)
 
-## Deskripsi Proyek
-Proyek ini merupakan hasil refactoring dari tugas praktikum Minggu 2. Halaman web portofolio pribadi dan layanan interaktif ini dikembangkan dengan menerapkan penguasaan CSS lanjutan, kalkulasi spesifisitas selektor tanpa pemaksaan !important, serta integrasi Bootstrap 5.3.3 untuk menciptakan antarmuka yang modern, rapi, dan responsif. Proyek ini juga dipublikasikan melalui GitHub Pages.
+---
 
-## Fitur-Fitur Halaman
+## 1. Pemodelan Arsitektur System C4 Container Diagram
 
-### Navigasi Responsif (Sticky Navbar):
----Navigasi menempel di bagian atas layar saat halaman digulir.
----Dilengkapi menu hamburger (collapse) untuk perangkat layar kecil/smartphone.
+```mermaid
+graph TD
+    user[User Browser]
+    
+    subgraph Presentation Tier
+        HTMLShell[index.html - Static Shell]
+        AppJS[js/app.js - Presentation Logic & DOM Rendering]
+        Styles[css/custom-style.css & Bootstrap 5]
+    end
 
-### Bagian Profil (Hero Section):
----Menampilkan identitas pengembang, foto profil, status aktif, bio singkat, dan badge keahlian teknis.
+    subgraph Data Access Layer
+        APIService[js/api-services.js - Fetch API Provider]
+    end
 
-### Showcase Proyek Akademik:
----Ditampilkan dalam bentuk kartu grid yang responsif.
----Setiap kartu proyek memiliki tombol interaktif untuk membuka jendela Modal berisi rincian peran, perangkat yang digunakan, dan pencapaian proyek.
----Terdapat rekapitulasi data proyek dalam format tabel yang rapi.
+    subgraph Decoupled Data Tier
+        JSON1[(data/profile.json)]
+        JSON2[(data/projects.json)]
+        JSON3[(data/services.json)]
+    end
 
-### Layanan Spesialisasi:
----Informasi bidang fokus layanan seperti Web Frontend Design dan Software Modeling.
+    subgraph Client State Persistence
+        LocalStorage[(Browser LocalStorage)]
+    end
 
-### Formulir Konsultasi:
----Menggunakan Floating Labels (.form-floating) dan Input Groups berikon.
----Dilengkapi validasi form Bootstrap (peringatan visual jika data kosong atau format email belum sesuai).
-
-### Desain & Gaya Tampilan:
----Tampilan modern dengan penerapan CSS Custom Properties (:root) untuk standardisasi warna dan variabel jarak.
----Menggunakan selektor CSS lanjutan (kombinator, :hover, :focus-visible, :nth-child()).
----Kode CSS bersih dan terstruktur tanpa ketergantungan buruk pada !important.
-
-## Teknologi yang Digunakan
----HTML5: Struktur semantik halaman web.
----CSS3: Styling kustom, variabel warna (:root), selektor tingkat lanjut, dan efek transisi.
----Bootstrap 5.3.3 (CDN): Sistem grid 12 kolom responsif, komponen modal, navbar responsif, kartu, badge, dan validasi form.
----Bootstrap Icons 1.11.3 (CDN): Kumpulan ikon antarmuka.
----Git & GitHub Pages: Version control dan media publikasi halaman web.
-
-# Struktur Berkas
-
-├── IMG/
-│   └── foto.jpeg        # Foto profil pengembang=
-├── index.html           # Halaman utama portofolio
-├── style.css            # Berkas penataan gaya (CSS kustom)
-└── README.md            # Dokumentasi proyek praktikum
+    user -->|1. HTTP Request Shell| HTMLShell
+    HTMLShell -->|2. Loads Scripts & CSS| AppJS
+    AppJS -->|3. Async Fetch Call| APIService
+    APIService -->|4. Get Data| JSON1
+    APIService -->|4. Get Data| JSON2
+    APIService -->|4. Get Data| JSON3
+    AppJS -->|5. Universal Modal / CSR Render| user
+    AppJS -->|6. Save Orders| LocalStorage

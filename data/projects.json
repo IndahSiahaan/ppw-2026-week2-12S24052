@@ -1,0 +1,78 @@
+[
+  {
+    "id": "proj-1",
+    "title": "Sistem Administrasi RS Balige",
+    "category": "modeling",
+    "categoryLabel": "SRS & Workflow",
+    "themeClass": "theme-purple",
+    "iconClass": "bi-hospital",
+    "badgeClass": "badge-soft-purple",
+    "description": "Penyusunan Software Requirements Specification (SRS Bab 1-3), analisis pemodelan alur kerja sistem rumah sakit terpadu, dan diagram BPMN.",
+    "role": "System Analyst",
+    "tools": "Bizagi Modeler & PlantUML",
+    "focus": "BPMN 2.0, Functional & Non-Functional Requirements",
+    "deliverable": "Dokumen SRS Bab 1-3 & Diagram BPMN Terstandarisasi",
+    "achievements": [
+      "Memodelkan 5 alur proses utama mulai dari triase, pendaftaran poli, hingga pembayaran kasir.",
+      "Mengidentifikasi 28 butir kebutuhan fungsional dan 10 parameter keamanan rekam medis."
+    ],
+    "tags": ["Bizagi", "PlantUML", "SRS Standard"]
+  },
+  {
+    "id": "proj-2",
+    "title": "Wander Del — Platform Open Trip",
+    "category": "architecture",
+    "categoryLabel": "Architecture",
+    "themeClass": "theme-cyan",
+    "iconClass": "bi-compass",
+    "badgeClass": "badge-soft-cyan",
+    "description": "Perancangan System Architectural Specification untuk platform eksplorasi wisata Danau Toba dengan pemodelan komponen berorientasi objek.",
+    "role": "Software Architect",
+    "tools": "UML Class, Sequence, & Component Diagrams",
+    "focus": "Model-View-Controller (MVC) & RESTful Pattern",
+    "deliverable": "System Architecture Specification Document",
+    "achievements": [
+      "Menghasilkan diagram sekuens transaksi pemesanan paket open trip dan integrasi gateway pembayaran.",
+      "Merancang skema relasi entitas modular untuk skalabilitas modul katalog destinasi wisata."
+    ],
+    "tags": ["Class Diagram", "Sequence Diagram", "Tourism Domain"]
+  },
+  {
+    "id": "proj-3",
+    "title": "Analisis Protokol Jaringan Komputer",
+    "category": "networking",
+    "categoryLabel": "Networking",
+    "themeClass": "theme-amber",
+    "iconClass": "bi-ethernet",
+    "badgeClass": "badge-soft-amber",
+    "description": "Analisis mendalam lalu lintas transmisi paket data HTTP, TCP 3-way handshake, IPv6, dan DNS query menggunakan Wireshark packet capture trace.",
+    "role": "Network Protocol Analyst",
+    "tools": "Wireshark Network Protocol Analyzer",
+    "focus": "HTTP/1.1, TCP 3-Way Handshake, DNS (UDP), ICMP",
+    "deliverable": "Laporan Analisis Forensik Lalu Lintas Jaringan",
+    "achievements": [
+      "Menghitung Round Trip Time (RTT) dan menganalisis retransmisi paket pada koneksi lossy.",
+      "Melacak alur rekursif DNS query dari stub resolver ke root nameserver."
+    ],
+    "tags": ["Wireshark", "Packet Analysis", "TCP/IP"]
+  },
+  {
+    "id": "proj-4",
+    "title": "Jadwal Imunisasi Anak Indonesia",
+    "category": "java",
+    "categoryLabel": "Java OOP",
+    "themeClass": "theme-rose",
+    "iconClass": "bi-heart-pulse",
+    "badgeClass": "badge-soft-rose",
+    "description": "Pengembangan aplikasi pencatatan, kalkulasi jadwal berkala, dan histori imunisasi anak berbasis konsep Object-Oriented Programming menggunakan Java murni.",
+    "role": "Java Software Developer",
+    "tools": "Java SE (JDK 17+)",
+    "focus": "Inheritance, Polymorphism, Encapsulation, & Abstraction",
+    "deliverable": "Source Code Java Terenkapsulasi & Dokumentasi Modul",
+    "achievements": [
+      "Menghitung interval pemberian vaksin booster secara otomatis berdasarkan tanggal lahir anak.",
+      "Mengimplementasikan penanganan eksepsi (Exception Handling) untuk validasi input tanggal dan nomor register."
+    ],
+    "tags": ["Java Standard", "OOP Encapsulation", "Kemenkes Guideline"]
+  }
+]

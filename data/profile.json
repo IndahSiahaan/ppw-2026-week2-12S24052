@@ -1,0 +1,22 @@
+{
+  "name": "Indah Triyuni Siahaan",
+  "nim": "12S24052",
+  "class": "13SI2",
+  "role": "Mahasiswa Sarjana Sistem Informasi — Institut Teknologi Del",
+  "bio": "Berfokus pada rekayasa perangkat lunak modern, analisis spesifikasi kebutuhan sistem (SRS/BPMN), perancangan antarmuka pengguna (UI/UX) yang ramah akses, serta pengembangan aplikasi web responsif berstandar industri.",
+  "status": "Aktif",
+  "avatar": "IMG/foto.jpeg",
+  "skills": [
+    { "name": "HTML5 Semantik & CSS3", "icon": "bi-filetype-html", "color": "text-danger" },
+    { "name": "Bootstrap 5.3 Framework", "icon": "bi-bootstrap-fill", "color": "text-primary" },
+    { "name": "Java OOP & Backend", "icon": "bi-cup-hot-fill", "color": "text-warning" },
+    { "name": "UML & BPMN Modeling", "icon": "bi-diagram-3-fill", "color": "text-info" },
+    { "name": "Wireshark & Analisis Jaringan", "icon": "bi-ethernet", "color": "text-success" }
+  ],
+  "metrics": {
+    "completedProjects": "4 Proyek",
+    "qualityStandard": "100% Valid",
+    "cssVariables": "12+ Token",
+    "specificity": "0 !important"
+  }
+}

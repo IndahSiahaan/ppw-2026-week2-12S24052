@@ -1,0 +1,26 @@
+[
+  {
+    "id": "service-1",
+    "title": "Web Frontend Design & UI/UX",
+    "icon": "bi-code-slash",
+    "bgGradient": "bg-primary-gradient",
+    "description": "Merancang antarmuka web modern, responsif, dan accessible sesuai standar semantik HTML5, CSS3, dan framework Bootstrap 5.3 dengan estetika cerah dan navigasi intuitif.",
+    "features": [
+      "Responsive Mobile-First Design",
+      "Glassmorphism & Micro-Interactions",
+      "Clean Accessible Code (WCAG Aligned)"
+    ]
+  },
+  {
+    "id": "service-2",
+    "title": "Sistem & Software Modeling",
+    "icon": "bi-diagram-3",
+    "bgGradient": "bg-purple-gradient",
+    "description": "Analisis kebutuhan sistem informasi, penyusunan Software Requirements Specification (SRS), pemodelan proses bisnis (BPMN), dan diagram arsitektur UML (Use Case, Activity, Sequence).",
+    "features": [
+      "Software Requirements Specification (SRS)",
+      "Business Process Modeling Notation (BPMN)",
+      "Unified Modeling Language (UML) Terpadu"
+    ]
+  }
+]
