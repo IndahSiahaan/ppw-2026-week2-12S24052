@@ -47,7 +47,7 @@ Proyek ini merupakan hasil refactoring dari tugas praktikum Minggu 2. Halaman we
 ---Bootstrap Icons 1.11.3 (CDN): Kumpulan ikon antarmuka.
 ---Git & GitHub Pages: Version control dan media publikasi halaman web.
 
-Struktur Berkas
+# Struktur Berkas
 
 ├── IMG/
 │   └── foto.jpeg        # Foto profil pengembang=
